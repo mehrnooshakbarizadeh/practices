@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="./fonts/font-awesome.css">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon-Html</title>
+</head>
+<body>
+  <div class="container-side">
+    <div class="menu-sidebar">
+      <div class="menu-header">
+        <h1 class="logo">NEON</h1>
+        <span onclick="handleHamberMenuBtn()" class="menu-hamber"><i class="bi-list" ></i></span>
+      </div>
+      <div class="menu">
+        <nav>
+
+          <li>
+            <a href="#">
+              <i class="bi bi-speedometer" id="menu-icon"></i><span class="menu-title">Dashbord</span> 
+            </a>
+            <!-- <i class="bi bi-caret-right-fill"></i> -->
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-grid-fill"></i><span class="menu-title">Layout</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-laptop-fill"></i><span class="menu-title">Frontend</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-building"></i><span class="menu-title">UI Element</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-envelope-fill"></i><span class="menu-title">Mailbox</span>
+            </a>
+            <!-- <i class="bi bi-caret-right-fill"></i> -->
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-ui-checks"></i><span class="menu-title">Forms</span>
+            </a>
+            <!-- <i class="bi bi-caret-right-fill"></i> -->
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-table"></i><span class="menu-title">Tables</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-basket3-fill"></i><span class="menu-title">Extra</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-bar-chart-line-fill"></i><span class="menu-title">Charts</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-diagram-3-fill"></i><span class="menu-title">Menu Levels</span>
+            </a>
+          </li>
+
+      </nav>
+      </div>
+    </div>
+    </div>
+  <div class="container-main">
+    <div class="header-main">
+      <div id="header-left">
+        <div id="avatar">
+          <!-- <img src="#"> -->
+          <span class="personal-avatar"><i class="bi bi-person-circle"></i></span>
+          <h4>Customer Name</h4>
+        </div>
+        <i class="anounce bi-list-task"></i>
+        <i class="anounce bi-envelope-fill"></i>
+        <i class="anounce bi-exclamation-triangle-fill"></i>
+      </div>
+      <div class="header-right">
+        <div class="right-link">
+          <h6>Language:</h6>
+          <img src="./images/flag-uk.png" class="flag">
+          <!-- <div class="language-submenu">
+            <a href="#" class="flag">
+              <p>Deutsch</p>
+              <img src="#">
+            </a>
+            <a href="#" class="flag">
+              <p>English</p>
+              <img src="#">
+            </a>
+            <a href="#" class="flag">
+              <p>Turkey</p>
+              <img src="#">
+            </a>
+          </div> -->
+        </div>
+        <div class="right-link">
+            <a href="#" class="link-decoration">
+              <i class="bi bi-chat-fill"></i>
+              <h6>Chat</h6>
+            </a>
+            <div class="badge-chat">3</div>
+        </div>
+        <div class="right-link" id="omit-border">
+          <h6>Log Out</h6>
+          <i class="anounce-right bi-box-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div id="section-a" class="grid">
+        <!-- <div class="sectionA-wrap"> -->
+          <div class="box bg-red" id="box-1">
+            <div class="user box-svg"></div>
+            <h1>83</h1>
+            <h4>Registered users</h4>
+            <h6>so far in our blog, and our website.</h6>
+          </div>
+          <div class="box bg-green" id="box-2">
+            <div class="chart box-svg"></div>
+            <h1>135</h1>
+            <h4>Daily Visitors</h4>
+            <h6>this is the average value</h6>
+          </div>
+          <div class="box bg-lightBlue" id="box-3">
+            <div class="message box-svg"></div>
+            <h1>23</h1>
+            <h4>New Messages</h4>
+            <h6>messages per day.</h6>
+          </div>
+          <div class="box bg-blue" id="box-4">
+            <div class="wifi box-svg"></div>
+            <h1>52</h1>
+            <h4>Subscribers</h4>
+            <h6>on our site right now.</h6>
+          </div>
+        <!-- </div> -->
+      </div>
+    </section>
+    <section>
+      <div id="section-b" class="grid">
+        <div class="sectionB-wrap">
+          <div class="tabs">
+            <h5 id="site-status">Site Status</h5>
+            <button class="tablinks active" onclick="openChart(event, 'ariaChart')">Aria Chart</button>
+            <button class="tablinks" onclick="openChart(event, 'lineCharts')">Line Charts</button>
+            <button class="tablinks" onclick="openChart(event, 'pieChart')">Pie Chart</button>
+          </div>
+        
+        <div id="ariaChart" class="tabcontent">
+          <img class="chart-image" src="./images/chartOne.png">  
+        </div>
+        <div id="lineCharts" class="tabcontent">
+          <img class="chart-image" src="./images/areaChart.png">  
+        </div>
+        <div id="pieChart" class="tabcontent">
+          <img class="chart-image" src="./images/piChart.png">  
+        </div>
+        <div class="right-side"></div>
+      </div>
+      </div>
+    </section>
+  </div>
+  <script src="neon.js"></script>
+</body>
+</html>
